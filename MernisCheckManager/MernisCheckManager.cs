@@ -16,6 +16,7 @@ namespace MernisCheckManager
             var client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
             var result = client.TCKimlikNoDogrulaAsync(identityNumber, firstname, lastName, birthdayYear).Result.Body.TCKimlikNoDogrulaResult;
             return result;
+
         }
     }
 }
